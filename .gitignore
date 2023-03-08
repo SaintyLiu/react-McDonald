@@ -1,0 +1,24 @@
+# c.
+.DS_STORE
+
+# Node.
+node_modules
+npm-debug.log*
+
+#webstorm
+.idea
+
+# yarn
+yarn-error.log
+
+# lerna
+lerna-debug.log
+
+# project
+static
+dist
+build
+
+# sloth
+slothTemp
+.sloth
