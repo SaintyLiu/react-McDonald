@@ -29,11 +29,13 @@ const Counter = (props) => {
   const ctx = useContext(CardContext);
   // 添加购物车的函数
   const addButtonHandler = () => {
-    ctx.addItem(props.meal);
+    // ctx.addItem(props.meal);
+    ctx.cartDispatch({ type: "ADD", meal: props.meal });
   };
   // 减少购物车的函数
   const subButtonHandler = () => {
-    ctx.removeItem(props.meal);
+    // ctx.removeItem(props.meal);
+    ctx.cartDispatch({ type: "REMOVE", meal: props.meal });
   };
   return (
     <div className={classes.Counter}>
